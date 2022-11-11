@@ -15,6 +15,7 @@ function User() {
     useEffect(()=>{
         getUser(params.login)
         getUserRepos(params.login)
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     const {
@@ -71,7 +72,7 @@ function User() {
                     </h1>
                     <p>{bio}</p>
                     <div className="mt-4 card-actions">
-                        <a href={html_url} target='_blank' rel='norefferer' className='btn btn-outline'>Visit GitHub Profile</a>
+                        <a href={html_url} target='_blank' rel='noreferrer' className='btn btn-outline'>Visit GitHub Profile</a>
                     </div>
                 </div>
 
